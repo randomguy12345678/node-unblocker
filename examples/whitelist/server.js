@@ -9,7 +9,7 @@ const app = express();
 const unblocker = Unblocker({
   requestMiddleware: [
     whitelist({
-      allowedDomains: ["wikipedia.org", "wikimedia.org", "wiktionary.org"],
+      allowedDomains: ["wikipedia.org", "wikimedia.org", "wiktionary.org", "reddit.com", "youtube.com"],
       message: "The requested url is not permitted.",
     }),
   ],
